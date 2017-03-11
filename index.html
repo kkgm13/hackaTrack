@@ -8,38 +8,42 @@
 	<meta name="author" content="Kelvin and Milton">
 	<meta name="language" content="en-US">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="shortcut icon" href="graphics/img/icon.png"/>
 	<!--Bootstrap CSS-->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 		<!--JQuery-->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 		<!--JavaScript-->
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-	<title>"Hackathon Name" Tracker</title>
+	<!---->
+	<title>"Hackathon Name" - Hackathon Event Tracker</title>
 </head>
 <body class="container-fluid">
 	<!--Navbar-->
 	<nav class="navbar navbar-inverse navbar-static-top">
+		<!-- Nav Container -->
 		<div class="container-fluid">
-			<!-- Nav Bar -->
 			<div class="navbar-header">
-				<!--Aria-->
+				<!--Mobile Aria-->
 		    	<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
 					<span class="sr-only">Toggle navigation</span>
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
 				</button>
+				<!--Logo Image-->
 				<img class="navbar-brand" src="graphics/img/icon2.png" style="padding: 5px 10px;">
-				<a class="navbar-brand" href="#">Hackathon Event Tracker</a>
+				<!--Hackathon Name-->
+				<a class="navbar-brand" href="index.html">Hackathon Event Tracker</a>
 			</div>
 		    <!--Nav Bar-->
 			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 	    		<!--Left Side-->
 				<ul class="nav navbar-nav">
-					<!--Central Command-->
+					<!--Home Page-->
 					<li class="active"><a href="#">Command Central<span class="sr-only">(current)</span></a></li>
 					<!--Time Table-->
-					<li><a href="#">Timetable</a></li>
+					<li><a href="timetable.html">Timetable</a></li>
 				</ul>
 				<!--Right Side-->
 				<ul class="nav navbar-nav navbar-right">
@@ -72,14 +76,13 @@
 	<!--Container-->
 	<div class="container-fluid">	
 		<!--Timer-->
-		<div class="container">
+		<div class="container-fluid">
 			<div class="page-header">
 				<h2>Countdown to the End:</h2>
-				
 			</div>
 			<br>
 			<!--CoundDown Timer PLACED HERE-->
-			<p id="demo" style="text-align: center;font-size: 60px;"></p>
+			<p id="demo" style="text-align: center;font-size: 100px; font-weight: bolder; color: red;"></p>
 		</div>
 		
 		<script>
@@ -113,47 +116,62 @@
 			}
 		}, 1000);
 		</script>
-		<!--Scroll Down Timetable-->
-		<div class="page-header">
-			  <h3>Schedule</h3>
+		<!--Scrollable Timetable-->
+		<div class="container-fluid">
+			<!--Header-->
+			<div class="page-header">
+				<h2>Schedule</h2>
 			</div>
-		<div class="jumbotron">
-			<div class="container">
-  <h2>Event TimeTable</h2>        
-  <table class="table">
-    <thead>
-      <tr>
-        <th>Time</th>
-        <th>Event</th>
-        <th>Location</th>
-		<th>Group</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td> 2/5/2017</td>
-        <td>doehack</td>
-        <td>London</td>
-		<td>Tesco</>
-      </tr>
-      <tr>
-        <td>4/4/2017</td>
-        <td>codeend</td>
-        <td> Birmingham</td>
-		<td> BCU</td>
-      </tr>
-      <tr>
-        <td>10/6/ 2017</td>
-        <td>scoobydoo</td>
-        <td> Manchester</td>
-		<td> google </td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  
-</div>
+			<!--Jumbotron-->
+			<div class="jumbotron">
+				<div class="container">
+					<!--Table Name-->
+					<h2>Event TimeTable</h2>
+					<!--Event Schedule Table-->     
+					<table class="table">
+						<!--Schedule Header-->
+						<thead>
+							<tr>
+								<th>Time</th>
+								<th>Event Name</th>
+								<th>Location</th>
+								<th>Modulator</th>
+							</tr>
+						</thead>
+						<!--Schedule Content-->
+						<tbody>
+							<!--Row 1-->
+							<tr>
+								<td>01/12/2000 - 09:00</td>
+								<td>Register</td>
+								<td>Main Hall</td>
+								<td>Hackathon Group</td>
+							</tr>
+							<!--Row 2-->
+							<tr>
+								<td>01/12/2000 - 12:00</td>
+								<td>Hacking Begins</td>
+								<td>Hacking Rooms</td>
+								<td>Hackathon Group</td>
+							</tr>
+							<!--Row 3-->
+							<tr>
+								<td>01/12/2000 - 09:00</td>
+									<!--Please reference the hackathon devpost -->
+								<td>Hacking Ends!!! - Remember to publish to <a href="https://devpost.com/">DevPost</a></td>
+								<td>Hacking Rooms</td>
+								<td>DevPost</td>
+							</tr>
+							<!--Row 4-->
+							<tr>
+								<td>02/12/2000 - 16:00</td>
+								<td>Closing Remarks</td>
+								<td>Main Hall</td>
+								<td>Hackathon Group</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
 			</div>
 		</div>
 		<!--Events (Mobile: 2 a Row)-->
@@ -268,6 +286,7 @@
 		<div class="page-footer">
 			<h3>Copyright</h3>
 			<p>This template is created & copyrighted by <a href="https://github.com/kkgm13">Kelvin M.</a> & <a href="https://github.com/Milton-R">Milton R.</a> for any hackathon event tracking usage.</p>
+			<p>This is an open sourced Hackathon tracker template.</p>
 		</div>
 	</div>
 </body>
