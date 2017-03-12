@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<!--Meta Data-->
+	<meta charset="utf-8">
+	<meta name="description" content="About the Hackathon">
+	<meta name="keyword" content="hackathon, event, tracker, hackTrack">
+	<meta name="author" content="Kelvin and Milton">
+	<meta name="language" content="en-US">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="shortcut icon" href="graphics/img/icon.png"/>
+	<!--Bootstrap CSS-->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<!--JQuery-->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+		<!--JavaScript-->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<!---->
+	<title>Admin Log In - Hackathon Event Tracker</title>
+</head>
+<body class="container-fluid">
+	<!--Navbar-->
+	<nav class="navbar navbar-inverse navbar-static-top">
+		<!-- Nav Container -->
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<!--Mobile Aria-->
+		    	<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<!--Logo Image-->
+				<img class="navbar-brand" src="graphics/img/icon2.png" style="padding: 5px 10px;">
+				<!--Hackathon Name-->
+				<a class="navbar-brand" href="index.html">Hackathon Event Tracker</a>
+				<!--Badges-->
+				<span class="badge"></span>
+			</div>
+		    <!--Nav Bar-->
+			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+	    		<!--Left Side-->
+				<ul class="nav navbar-nav">
+					<!--Home Page-->
+					<li class="active"><a href="index.html">Command Central<span class="sr-only">(current)</span></a></li>
+					<!--Time Table-->
+					<li><a href="timetable.html">Timetable</a></li>
+				</ul>
+				<!--Right Side-->
+				<ul class="nav navbar-nav navbar-right">
+					<!--Events-->
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Events<span class="caret"></span></a>
+						<ul class="dropdown-menu">
+							<li><a href="events1.html">Event 1</a></li>
+							<li><a href="events2.html">Event 2</a></li>
+							<li><a href="events3.html">Event 3</a></li>
+							<li><a href="events4.html">Event 4</a></li>
+						</ul>
+	        		</li>
+	        		<!--Sponsors-->
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Sponsors<span class="caret"></span></a>
+						<ul class="dropdown-menu">
+							<li><a href="sponsor1.html">Sponsors 1</a></li>
+							<li><a href="sponsor2.html">Sponsors 2</a></li>
+							<li><a href="sponsor3.html">Sponsors 3</a></li>
+							<li><a href="sponsor4.html">Sponsors 4</a></li>
+						</ul>
+	        		</li>
+	        		<!--About-->
+	        		<li><a href="aboutUs.html">About Us</a></li>
+				</ul>
+			</div><!-- /.navbar-collapse -->
+		</div><!-- /.container-fluid -->
+	</nav>
+	<!--Container-->
+	<div class="container-fluid">
+		<!--Admin Form-->
+		<form method="post" action="dashboard.html">
+			<div class="panel panel-default">
+				<div class="panel-body">
+					<!--UserName-->
+					<h4><label>Username</label></h4>
+					<div class="input-group">
+						<span class="input-group-addon" id="basic-addon1"><span class="glyphicon glyphicon-user" aria-hidden="true"></span></span>
+						<input type="text" class="form-control" placeholder="Username" aria-describedby="basic-addon1">
+					</div>
+					<br>
+					<!--Password-->
+					<h4><label>Password</label></h4>
+					<div class="input-group">
+						<span class="input-group-addon" id="basic-addon1"><span class="glyphicon glyphicon-lock" aria-hidden="true"></span></span>
+						<input type="password" class="form-control" placeholder="Password" aria-describedby="basic-addon1">
+					</div>
+					<br>
+					<!--Remember Me-->
+					<div class="input-group">
+						<span class="input-group-addon">
+							<input type="checkbox" aria-label="...">
+						</span>
+						<input type="text" class="form-control" placeholder="Remember Me"aria-label="..." disabled="disabled">
+					</div>
+					<br>
+					<br>
+					<!--Button-->
+					<div class="btn-group btn-group-justified" role="group" aria-label="...">
+						<div class="btn-group" role="group">
+							<button type="button" class="btn btn-default">Sign In</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</form>
+		<!--Footer-->
+		<div class="page-footer">
+			<h3>Copyright</h3>
+			<p>This template is created & copyrighted by <a href="https://github.com/kkgm13">Kelvin M.</a> & <a href="https://github.com/Milton-R">Milton R.</a> for any hackathon event tracking usage.</p>
+			<p>This is an open sourced Hackathon tracker template.</p>
+		</div>
+	</div>
+</body>
+</html>
