@@ -16,7 +16,7 @@
 		<!--JavaScript-->
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 	<!---->
-	<title>"Hackathon Events: Event" - Hackathon Event Tracker</title>
+	<title>"Company Name" - Hackathon Event Tracker</title>
 </head>
 <body class="container-fluid">
 	<!--Navbar-->
@@ -43,17 +43,17 @@
 	    		<!--Left Side-->
 				<ul class="nav navbar-nav">
 					<!--Home Page-->
-					<li><a href="index.html">Command Central<span class="sr-only">(current)</span></a></li>
+					<li class="active"><a href="#">Command Central<span class="sr-only">(current)</span></a></li>
 					<!--Time Table-->
 					<li><a href="timetable.html">Timetable</a></li>
 				</ul>
 				<!--Right Side-->
 				<ul class="nav navbar-nav navbar-right">
 					<!--Events-->
-					<li class="dropdown active">
+					<li class="dropdown">
 						<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Events<span class="caret"></span></a>
 						<ul class="dropdown-menu">
-							<li class="active"><a href="#">Event 1</a></li>
+							<li><a href="events1.html">Event 1</a></li>
 							<li><a href="events2.html">Event 2</a></li>
 							<li><a href="events3.html">Event 3</a></li>
 							<li><a href="events4.html">Event 4</a></li>
@@ -82,45 +82,50 @@
 			<button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
 			<strong>Event Starting:</strong> This event is starting in a few minutes
 		</div>
-		<!--Logo-->
-		<div class="row">
-			<div class="col-sm-12">
-				<div class="thumbnail">
-					<div class="container-fluid">
-						<!--Event Name-->
-						<div class="page-header">
-							<h1>Events On: eventName</h1>
-						</div>
-							<!--Events-->
-						<div class="caption">
-								<!--Description-->
-							<div class="page-header">
-								<h2>Description</h2>
-							</div>
-							<div class="page-content">
-								<i>Event Description</i>
-							</div>
-								<!--Time-->
-							<div class="page-header">
-								<h2>Time: 00:00</h2>
-							</div>
-								<!--Description-->
-							<div class="page-header">
-								<h2>Organizer</h2>
-							</div>
-							<div class="page-content">
-								<h4>Hackathon Organizer</h4>
-							</div>
-						</div>
-					</div>
-				</div>
+		<!--Timer-->
+		<div class="container-fluid">
+			<div class="page-header">
+				<h2>Countdown to the End:</h2>
 			</div>
+			<br>
+			<!--CoundDown Timer PLACED HERE-->
+			<p id="demo" style="text-align: center;font-size: 80px; font-weight: bolder; color: red;"></p>
 		</div>
-		<!--Footer-->
-		<div class="page-footer">
-			<h3>Copyright</h3>
-			<p>This template is created & copyrighted by <a href="https://github.com/kkgm13">Kelvin M.</a> & <a href="https://github.com/Milton-R">Milton R.</a> for any hackathon event tracking usage.</p>
-			<p>This is an open sourced Hackathon tracker template.</p>
+		
+		<script>
+		// Set the date we're counting down
+			//Please SET the ENDING Date HERE
+		var countDownDate = new Date("March 12, 2017 12:00:00").getTime();
+
+		// Update the count down every 1 second
+		var x = setInterval(function() {
+
+			// Get todays date and time
+			var now = new Date().getTime();
+			
+			// Find the distance between now an the count down date
+			var distance = countDownDate - now;
+			
+			// Time calculations for days, hours, minutes and seconds
+			var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+			var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+			var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+			var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+			
+			// Output the result in an element with id="demo"
+			document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+			+ minutes + "m " + seconds + "s ";
+			
+			// If the count down is over, write some text 
+			if (distance < 0) {
+				clearInterval(x);
+				document.getElementById("demo").innerHTML = "HACKS ENDED!!";
+			}
+		}, 1000);
+		</script>
+		<!--Count Down Timer-->
+		<div class="container-fluid">
+		
 		</div>
 	</div>
 </body>
