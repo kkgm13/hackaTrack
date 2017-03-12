@@ -1,113 +1,188 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+	<!--Meta Data-->
 	<meta charset="utf-8">
+	<meta name="description" content="About the Hackathon">
+	<meta name="keyword" content="hackathon, event, tracker, hackTrack">
+	<meta name="author" content="Kelvin and Milton">
+	<meta name="language" content="en-US">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="shortcut icon" href="graphics/img/icon.png"/>
 	<!--Bootstrap CSS-->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 		<!--JQuery-->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 		<!--JavaScript-->
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-	<title>"Hackathon Name" Tracker</title>
+	<!---->
+	<title>Hackathon Schedule - Hackathon Event Tracker</title>
 </head>
 <body class="container-fluid">
 	<!--Navbar-->
-	<nav class="navbar navbar-inverse navbar-fixed-top">
+	<nav class="navbar navbar-inverse navbar-static-top">
 		<div class="container-fluid">
 			<!-- Nav Bar -->
 			<div class="navbar-header">
+				<!--Aria-->
 		    	<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
 					<span class="sr-only">Toggle navigation</span>
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
 				</button>
+				<!--Logo Brand-->
 				<img class="navbar-brand" src="graphics/img/icon2.png" style="padding: 5px 10px;">
-				<a class="navbar-brand" href="#">Hackathon Event Tracker Timetable</a>
+				<!--Title Name-->
+				<a class="navbar-brand" href="index.html">Hackathon Event Tracker</a>
 			</div>
 		    <!--Nav Bar-->
 			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 	    		<!--Left Side-->
 				<ul class="nav navbar-nav">
 					<!--Central Command-->
-					<li class="active"><a href="#">Command Central<span class="sr-only">(current)</span></a></li>
+					<li><a href="index.html">Command Central<span class="sr-only">(current)</span></a></li>
 					<!--Time Table-->
-					<li><a href="#">Timetable</a></li>
+					<li class="active"><a>Timetable</a></li>
 				</ul>
-				<!---->
+				<!--Right Side-->
 				<ul class="nav navbar-nav navbar-right">
 					<!--Events-->
 					<li class="dropdown">
-						<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Events<span class="caret"></span></a>
+						<a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Events<span class="caret"></span></a>
 						<ul class="dropdown-menu">
-							<li><a href="#">Event 1</a></li>
-							<li><a href="#">Event 2</a></li>
-							<li><a href="#">Event 3</a></li>
-							<li><a href="#">Event 4</a></li>
+							<li><a href="events1.html">Event 1</a></li>
+							<li><a href="events2.html">Event 2</a></li>
+							<li><a href="events3.html">Event 3</a></li>
+							<li><a href="events4.html">Event 4</a></li>
 						</ul>
 	        		</li>
 	        		<!--Sponsors-->
 					<li class="dropdown">
 						<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Sponsors<span class="caret"></span></a>
 						<ul class="dropdown-menu">
-							<li><a href="#">Sponsors 1</a></li>
-							<li><a href="#">Sponsors 2</a></li>
-							<li><a href="#">Sponsors 3</a></li>
-							<li><a href="#">Sponsors 4</a></li>
+							<li><a href="sponsor1.html">Sponsors 1</a></li>
+							<li><a href="sponsor2.html">Sponsors 2</a></li>
+							<li><a href="sponsor3.html">Sponsors 3</a></li>
+							<li><a href="sponsor4.html">Sponsors 4</a></li>
 						</ul>
 	        		</li>
 	        		<!--About-->
-	        		<li><a href="#">About Us</a></li>
+	        		<li><a href="aboutUs.html">About Us</a></li>
 				</ul>
 			</div><!-- /.navbar-collapse -->
 		</div><!-- /.container-fluid -->
 	</nav>
-	
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-</head>
-<body>
-
-<div class="container">
-  <h2>Basic Table</h2>        
-  <table class="table">
-    <thead>
-      <tr>
-        <th>Time</th>
-        <th>Event</th>
-        <th>Location</th>
-		<th>Group</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td> 2/5/2017</td>
-        <td>doehack</td>
-        <td>London</td>
-		<td>Tesco</>
-      </tr>
-      <tr>
-        <td>4/4/2017</td>
-        <td>codeend</td>
-        <td> Birmingham</td>
-		<td> BCU</td>
-      </tr>
-      <tr>
-        <td>10/6/2017</td>
-        <td>scoobydoo</td>
-        <td> Manchester</td>
-		<td> google </td>
-      </tr>
-    </tbody>
-  </table>
-</div>
-	
-
-	
-	
-	
-	
-	</body>
-	</html>
+	<!--Table Container-->
+	<div class="container-fluid">
+		<!--Table Name-->
+		<h2>Event TimeTable</h2>
+			<!--Event Schedule Table-->     
+		<table class="table">
+			<!--Schedule Header-->
+			<thead>
+				<tr>
+					<th>Starting Time</th>
+					<th>Event Name</th>
+					<th>Location</th>
+					<th>Modulator</th>
+				</tr>
+			</thead>
+				<!--Schedule Content-->
+			<tbody>
+				<!--Row 1-->
+				<tr>
+					<td>01/12/2000 - 09:00</td>
+					<td>Register</td>
+					<td>Main Hall</td>
+					<td>Hackathon Group</td>
+				</tr>
+				<!--Row -->
+				<tr>
+					<td>01/12/2000 - 10:30</td>
+					<td>Open Ceremony</td>
+					<td>Main Hall</td>
+					<td>Hackathon Group</td>
+				</tr>
+					<!--Row -->
+				<tr>
+					<td>01/12/2000 - 12:00</td>
+					<td>Hacking Begins</td>
+					<td>Hacking Rooms</td>
+					<td>Hackathon Group</td>
+				</tr>
+					<!--Row -->
+				<tr>
+					<td>01/12/2000 - 12:30</td>
+					<td>Lunch</td>
+					<td>Lunch Area</td>
+					<td>Hackathon Group</td>
+				</tr>
+					<!--Row -->
+				<tr>
+					<td>01/12/2000 - 15:00</td>
+					<td>Event 1</td>
+					<td>Workshop Room 1</td>
+					<td>Sponsor Name</td>
+				</tr>
+					<!--Row -->
+				<tr>
+					<td>01/12/2000 - 15:00</td>
+					<td>Event 2</td>
+					<td>Workshop Room 2</td>
+					<td>Sponsor Name</td>
+				</tr>
+					<!--Row -->
+				<tr>
+					<td>01/12/2000 - 16:00</td>
+					<td>Event 3</td>
+					<td>Workshop Room 1</td>
+					<td>Sponsor Name</td>
+				</tr>
+					<!--Row -->
+				<tr>
+					<td>01/12/2000 - 18:00</td>
+					<td>Dinner</td>
+					<td>Lunch Area</td>
+					<td>Hackathon Group</td>
+				</tr>
+					<!--Row -->
+				<tr>
+					<td>01/12/2000 - 20:00</td>
+					<td>Event 4</td>
+					<td>Workshop Room 1</td>
+					<td>Sponsor Name</td>
+				</tr>
+					<!--Row -->
+				<tr>
+					<td>01/12/2000 - 21:00</td>
+					<td>Have a break, have a game session</td>
+					<td>Main Hall</td>
+					<td>Hackathon Group</td>
+				</tr>
+					<!--Row -->
+				<tr>
+					<td>01/12/2000 - 09:00</td>
+					<!--Please reference the hackathon devpost -->
+					<td>Hacking Ends!!! - Remember to publish to <strong><a href="https://devpost.com/">DevPost</a></strong></td>
+					<td>Hacking Rooms</td>
+					<td>DevPost</td>
+				</tr>
+					<!--Row -->
+				<tr>
+					<td>02/12/2000 - 16:00</td>
+					<td>Closing Remarks</td>
+					<td>Main Hall</td>
+					<td>Hackathon Group</td>
+				</tr>
+			</tbody>
+		</table>
+		<!--Footer-->
+		<div class="page-footer">
+			<h3>Copyright</h3>
+			<p>This template is created & copyrighted by <a href="https://github.com/kkgm13">Kelvin M.</a> & <a href="https://github.com/Milton-R">Milton R.</a> for any hackathon event tracking usage.</p>
+			<p>This is an open sourced Hackathon tracker template.</p>
+		</div>
+	</div>
+</body>
+</html>
