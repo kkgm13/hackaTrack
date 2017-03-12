@@ -1,5 +1,16 @@
+body{
+	/*
+	background-image: url("../graphics/img/background.png");
+	background-attachment: all;
+	background-position: left;
+	background-repeat: repeat;
+	background-size: cover;
+	*/
+}
+
 #foot{
-	
+	background-color: black;
+	color: white;
     text-align: center;
 	
 }
