@@ -27,17 +27,17 @@ body{
 
 @media(min-width: 450px){
 	#demo{
-		font-size: 45px;
+		font-size: 50px;
 	}
 }
 
-@media(min-width: 590px){
+@media(min-width: 645px){
 	#demo{
-		font-size: 60px;
+		font-size: 70px;
 	}
 }
 
-@media(min-width: 700px){
+@media(min-width: 725px){
 	#demo{
 		font-size: 80px;
 	}

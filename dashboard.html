@@ -17,12 +17,6 @@
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<!--Bootstrap CSS-->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-		<!--JQuery-->
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-		<!--JavaScript-->
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-		<!--Timer Javascript-->
-	<script type="text/javascript" href="js/timer.js"></script>
 </head>
 <body class="container-fluid">
 	<!--Navbar-->
@@ -46,16 +40,17 @@
 			</div>
 		    <!--Nav Bar-->
 			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-	    		<!--Left Side-->
+	    		<!---
+	    		<!--Left Side--
 				<ul class="nav navbar-nav">
-					<!--Home Page-->
+					<!--Home Page--
 					<li class="active"><a href="#">Command Central<span class="sr-only">(current)</span></a></li>
-					<!--Time Table-->
+					<!--Time Table--
 					<li><a href="timetable.html">Timetable</a></li>
 				</ul>
 				<!--Right Side-->
 				<ul class="nav navbar-nav navbar-right">
-					<!--Events-->
+					<!--Events--
 					<li class="dropdown">
 						<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Events<span class="caret"></span></a>
 						<ul class="dropdown-menu">
@@ -65,7 +60,7 @@
 							<li><a href="events4.html">Event 4</a></li>
 						</ul>
 	        		</li>
-	        		<!--Sponsors-->
+	        		<!--Sponsors--
 					<li class="dropdown">
 						<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Sponsors<span class="caret"></span></a>
 						<ul class="dropdown-menu">
@@ -75,8 +70,9 @@
 							<li><a href="sponsor4.html">Sponsors 4</a></li>
 						</ul>
 	        		</li>
-	        		<!--About-->
+	        		<!--About--
 	        		<li><a href="aboutUs.html">About Us</a></li>
+	        		-->
 	        		<!--Log Out-->
 	        		<li><a href="index.html">Log Out</a></li>
 				</ul>
@@ -114,37 +110,6 @@
 				Timer Javascript
 				MUST BE MADE EXTERNAL FOR BOTH THE dashboard.html & index.html
 			-->
-		<script>
-			// Set the date we're counting down
-				//Please SET the ENDING Date HERE
-			var countDownDate = new Date("March 12, 2017 12:00:00").getTime();
-
-			// Update the count down every 1 second
-			var x = setInterval(function() {
-
-				// Get todays date and time
-				var now = new Date().getTime();
-				
-				// Find the distance between now an the count down date
-				var distance = countDownDate - now;
-				
-				// Time calculations for days, hours, minutes and seconds
-				var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-				var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-				var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-				var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-				
-				// Output the result in an element with id="demo"
-				document.getElementById("demo").innerHTML = days + "d " + hours + "h "
-				+ minutes + "m " + seconds + "s ";
-				
-				// If the count down is over, write some text 
-				if (distance < 0) {
-					clearInterval(x);
-					document.getElementById("demo").innerHTML = "HACKS ENDED!!";
-				}
-			}, 1000);
-		</script>
 		<!--Communication Controls-->
 		<div class="container-fluid">
 			<div class="page-header">
@@ -392,5 +357,11 @@
 			<p>This is an open sourced Hackathon tracker template.</p>
 		</div>
 	</div>
+		<!--JQuery-->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+		<!--JavaScript-->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		<!--Timer Javascript-->
+	<script type="text/javascript" src="js/timer.js"></script>
 </body>
 </html>
