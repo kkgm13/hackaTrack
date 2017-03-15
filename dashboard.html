@@ -8,7 +8,12 @@
 	<meta name="author" content="Kelvin and Milton">
 	<meta name="language" content="en-US">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<!--Title-->
+	<title>Dashboard - Hackathon Event Tracker</title>
+		<!--Tab Icon-->
 	<link rel="shortcut icon" href="graphics/img/icon.png"/>
+	<!--External Information-->
+		<!---->
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<!--Bootstrap CSS-->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
@@ -16,9 +21,8 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 		<!--JavaScript-->
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		<!--Timer Javascript-->
 	<script type="text/javascript" href="js/timer.js"></script>
-	<!---->
-	<title>Dashboard - Hackathon Event Tracker</title>
 </head>
 <body class="container-fluid">
 	<!--Navbar-->
@@ -86,10 +90,17 @@
 			<button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
 			<strong>Event Posted</strong> This event has been added and notified to all
 		</div>
-		<div class="container">
-			
+		<!--Admin User Splash-->
+		<div class="container-fluid" style="background-color: grey; padding-bottom: 20px; border-radius: 50px; color: white;">
+			<!--Welcome Back Text-->
+			<div style="text-align: center;">
+				<h2>Welcome Back, <span id="adminName">adminName</span>!</h2>
+			</div>
+			<div style="text-align: center;">
+				<img class="img-circle" img="adminImage" src="graphics/img/background.png" height="150px" width="150px">
+			</div>
 		</div>
-
+		<br><br>
 		<!--Timer-->
 		<div class="container-fluid">
 			<div class="page-header">
@@ -97,7 +108,7 @@
 			</div>
 			<br>
 			<!--CoundDown Timer PLACED HERE-->
-			<p id="demo" style="text-align: center;font-size: 80px; font-weight: bolder; color: red;"></p>
+			<p id="demo"></p>
 		</div>
 			<!--
 				Timer Javascript
@@ -278,17 +289,45 @@
 							<!-- Default panel contents -->
 							<div class="panel-heading">Latest Anouncements</div>
 							<div class="panel-body">
-								<p><strong>Event Starting: </strong>ACSS event is starting in a few minutes</p>
+								<p>
+									<strong id="announcementTitle">eventName: </strong>
+									<span id="announcementDescription">announcementDescription</span>
+								</p>
 							</div>
 
 							<!-- List group -->
 							<div class="panel-heading">Later Events</div>
 							<ul class="list-group">
-								<li class="list-group-item"><strong>Event Starting: </strong>MLH event is starting in a few minutes</li>
-								<li class="list-group-item"><strong>Event Starting:</strong>Majestic's event is starting in a few minutes</li>
-								<li class="list-group-item"><strong>Lunch Starting: </strong>Lunch will be avaliable in 10 minutes</li>
-								<li class="list-group-item"><strong>Lunch: </strong>Please wait for member of staff to direct you to Lunch</li>
-								<li class="list-group-item"><strong>Hacking Start: </strong>Hacking has now begun</li>
+								<li class="list-group-item">
+									<p>
+										<strong id="announcementTitle">eventName: </strong>
+										<span id="announcementDescription">announcementDescription</span>
+									</p>
+								</li>
+								<li class="list-group-item">
+									<p>
+										<strong id="announcementTitle">eventName: </strong>
+										<span id="announcementDescription">announcementDescription</span>
+									</p>
+								</li>
+								<li class="list-group-item">
+									<p>
+										<strong id="announcementTitle">eventName: </strong>
+										<span id="announcementDescription">announcementDescription</span>
+									</p>
+								</li>
+								<li class="list-group-item">
+									<p>
+										<strong id="announcementTitle">eventName: </strong>
+										<span id="announcementDescription">announcementDescription</span>
+									</p>
+								</li>
+								<li class="list-group-item">
+									<p>
+										<strong id="announcementTitle">eventName: </strong>
+										<span id="announcementDescription">announcementDescription</span>
+									</p>
+								</li>
 							</ul>
 						</div>
 						<div class="btn-group btn-group-justified" role="group" aria-label="...">
@@ -307,17 +346,34 @@
 							<!-- Default panel contents -->
 							<div class="panel-heading">Now Happening</div>
 							<div class="panel-body">
-								<p>Event Name </p>
+								<strong>Event Name </strong>
+								<p><i>Description</i></p>
+								<p>Location: </p>
 							</div>
 
 							<!-- List group -->
 							<div class="panel-heading">Later Events</div>
 							<ul class="list-group">
-								<li class="list-group-item">Cras justo odio</li>
-								<li class="list-group-item">Dapibus ac facilisis in</li>
-								<li class="list-group-item">Morbi leo risus</li>
-								<li class="list-group-item">Porta ac consectetur ac</li>
-								<li class="list-group-item">Vestibulum at eros</li>
+								<li class="list-group-item">
+									<p>Event Name </p>
+									<p>Location: </p>
+								</li>
+								<li class="list-group-item">
+									<p>Event Name </p>
+									<p>Location: </p>
+								</li>
+								<li class="list-group-item">
+									<p>Event Name </p>
+									<p>Location: </p>
+								</li>
+								<li class="list-group-item">
+									<p>Event Name </p>
+									<p>Location: </p>
+								</li>
+								<li class="list-group-item">
+									<p>Event Name </p>
+									<p>Location: </p>
+								</li>
 							</ul>
 						</div>
 						<div class="btn-group btn-group-justified" role="group" aria-label="...">

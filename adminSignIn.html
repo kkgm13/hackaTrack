@@ -34,7 +34,7 @@
 				</button>
 				<!--Logo Image-->
 				<img class="navbar-brand" src="graphics/img/icon2.png" style="padding: 5px 10px;">
-				<!--Hackathon Name-->
+				<!--Hackathon Name / Home Page-->
 				<a class="navbar-brand" href="index.html">Hackathon Event Tracker</a>
 				<!--Badges-->
 				<span class="badge"></span>
@@ -43,8 +43,6 @@
 			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 	    		<!--Left Side-->
 				<ul class="nav navbar-nav">
-					<!--Home Page-->
-					<li class="active"><a href="index.html">Command Central<span class="sr-only">(current)</span></a></li>
 					<!--Time Table-->
 					<li><a href="timetable.html">Timetable</a></li>
 				</ul>
@@ -79,40 +77,44 @@
 	<!--Container-->
 	<div class="container-fluid">
 		<!--Admin Form-->
-		<div class="panel panel-default">
-			<form method="post" action="dashboard.html">
-				<div class="panel-body">
-					<!--UserName-->
-					<h4><label>Username</label></h4>
-					<div class="input-group">
-						<span class="input-group-addon" id="basic-addon1"><span class="glyphicon glyphicon-user" aria-hidden="true"></span></span>
-						<input type="text" class="form-control" placeholder="Username" aria-describedby="basic-addon1">
-					</div>
-					<br>
-					<!--Password-->
-					<h4><label>Password</label></h4>
-					<div class="input-group">
-						<span class="input-group-addon" id="basic-addon1"><span class="glyphicon glyphicon-lock" aria-hidden="true"></span></span>
-						<input type="password" class="form-control" placeholder="Password" aria-describedby="basic-addon1">
-					</div>
-					<br>
-					<!--Remember Me-->
-					<div class="input-group">
-						<span class="input-group-addon">
-							<input type="checkbox" aria-label="...">
-						</span>
-						<input type="text" class="form-control" placeholder="Remember Me"aria-label="..." disabled="disabled">
-					</div>
-					<br>
-					<br>
-					<!--Button-->
-					<div class="btn-group btn-group-justified" role="group" aria-label="...">
-						<div class="btn-group" role="group">
-							<button type="submit" class="btn btn-default">Sign In</button>
+			<div class="panel panel-default">
+				<!--Title-->
+				<div class="panel-heading" style="text-align: center;">
+					<h2 class="panel-title">Admin Log-In</h2>
+				</div>
+				<form method="post" action="dashboard.html">
+					<div class="panel-body">
+						<!--UserName-->
+						<h4><label>Username</label></h4>
+						<div class="input-group">
+							<span class="input-group-addon" id="basic-addon1"><span class="glyphicon glyphicon-user" aria-hidden="true"></span></span>
+							<input type="text" class="form-control" placeholder="Username" aria-describedby="basic-addon1">
+						</div>
+						<br>
+						<!--Password-->
+						<h4><label>Password</label></h4>
+						<div class="input-group">
+							<span class="input-group-addon" id="basic-addon1"><span class="glyphicon glyphicon-lock" aria-hidden="true"></span></span>
+							<input type="password" class="form-control" placeholder="Password" aria-describedby="basic-addon1">
+						</div>
+						<br>
+						<!--Remember Me-->
+						<div class="input-group">
+							<span class="input-group-addon">
+								<input type="checkbox" aria-label="...">
+							</span>
+							<input type="text" class="form-control" placeholder="Remember Me"aria-label="..." disabled="disabled">
+						</div>
+						<br>
+						<br>
+						<!--Button-->
+						<div class="btn-group btn-group-justified" role="group" aria-label="...">
+							<div class="btn-group" role="group">
+								<button type="submit" class="btn btn-default">Sign In</button>
+							</div>
 						</div>
 					</div>
-				</div>
-			</form>
+				</form>
 		</div>
 		<!--Footer-->
 		<div class="page-footer" id="foot">

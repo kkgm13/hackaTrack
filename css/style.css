@@ -1,16 +1,44 @@
 body{
-	/*
-	background-image: url("../graphics/img/background.png");
-	background-attachment: all;
-	background-position: left;
-	background-repeat: repeat;
-	background-size: cover;
-	*/
+
+}
+
+#demo{
+	text-align: center;
+	font-size: 25px;
+	font-weight: bolder;
+	color: red;"
 }
 
 #foot{
-	background-color: black;
+	background-color: #999999;
 	color: white;
-    text-align: center;
-	
+    text-align: center;	
+}
+
+@media(min-width: 320px){
+	#demo{
+		font-size: 35px;
+	}
+}
+
+@media(min-width: 400px){
+
+}
+
+@media(min-width: 450px){
+	#demo{
+		font-size: 45px;
+	}
+}
+
+@media(min-width: 590px){
+	#demo{
+		font-size: 60px;
+	}
+}
+
+@media(min-width: 700px){
+	#demo{
+		font-size: 80px;
+	}
 }

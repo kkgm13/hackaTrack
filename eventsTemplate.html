@@ -8,7 +8,6 @@
 	<meta name="author" content="Kelvin and Milton">
 	<meta name="language" content="en-US">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<!--Change the webpage icon-->
 	<link rel="shortcut icon" href="graphics/img/icon.png"/>
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<!--Bootstrap CSS-->
@@ -35,7 +34,7 @@
 				</button>
 				<!--Logo Image-->
 				<img class="navbar-brand" src="graphics/img/icon2.png" style="padding: 5px 10px;">
-				<!--Hackathon Name-->
+				<!--Hackathon Name / Home Page-->
 				<a class="navbar-brand" href="index.html">Hackathon Event Tracker</a>
 				<!--Badges-->
 				<span class="badge"></span>
@@ -44,8 +43,6 @@
 			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 	    		<!--Left Side-->
 				<ul class="nav navbar-nav">
-					<!--Home Page-->
-					<li><a href="index.html">Command Central<span class="sr-only">(current)</span></a></li>
 					<!--Time Table-->
 					<li><a href="timetable.html">Timetable</a></li>
 				</ul>
@@ -55,7 +52,7 @@
 					<li class="dropdown active">
 						<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Events<span class="caret"></span></a>
 						<ul class="dropdown-menu">
-							<li class="active"><a href="#">Event 1</a></li>
+							<li><a href="events1.html">Event 1</a></li>
 							<li><a href="events2.html">Event 2</a></li>
 							<li><a href="events3.html">Event 3</a></li>
 							<li><a href="events4.html">Event 4</a></li>
@@ -65,7 +62,7 @@
 					<li class="dropdown">
 						<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Sponsors<span class="caret"></span></a>
 						<ul class="dropdown-menu">
-							<li><a href="sponsor1.html">Sponsors 1</a></li>
+							<li class="active"><a>Sponsors 1</a></li>
 							<li><a href="sponsor2.html">Sponsors 2</a></li>
 							<li><a href="sponsor3.html">Sponsors 3</a></li>
 							<li><a href="sponsor4.html">Sponsors 4</a></li>
@@ -91,7 +88,7 @@
 					<div class="container-fluid">
 						<!--Event Name-->
 						<div class="page-header">
-							<h1>Event: eventName</h1>
+							<h1>Event: <span id="eventName">eventName</span></h1>
 						</div>
 							<!--Events-->
 						<div class="caption">
@@ -100,18 +97,25 @@
 								<h2>Description</h2>
 							</div>
 							<div class="page-content">
-								<i>Event Description</i>
+								<i id="eventDescription">Description</i>
 							</div>
 								<!--Time-->
 							<div class="page-header">
-								<h2>Time: 00:00</h2>
+								<h2>Time: <span id="eventTime">00:00</span></h2>
 							</div>
-								<!--Description-->
+								<!--Organizer-->
+							<div class="page-header">
+								<h2>Location</h2>
+							</div>
+							<div class="page-content">
+								<h4 id="eventLocation">Location</h4>
+							</div>
+								<!--Organizer-->
 							<div class="page-header">
 								<h2>Organizer</h2>
 							</div>
 							<div class="page-content">
-								<h4>Hackathon Organizer</h4>
+								<h4 ><a href="" id="sponsorName">sponsorName</a></h4>
 							</div>
 						</div>
 					</div>

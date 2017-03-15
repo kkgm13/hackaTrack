@@ -16,10 +16,12 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 		<!--JavaScript-->
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-	<!---->
+		<!--Timer Javascript-->
+	<script type="text/javascript" href="js/timer.js"></script>
+	<!--Title-->
 	<title>"Company Name" - Hackathon Event Tracker</title>
 </head>
-<body class="container-fluid">
+<body class="container-fluid" onload="x">
 	<!--Navbar-->
 	<nav class="navbar navbar-inverse navbar-static-top">
 		<!-- Nav Container -->
@@ -34,7 +36,7 @@
 				</button>
 				<!--Logo Image-->
 				<a href="adminSignIn.html"><img class="navbar-brand" src="graphics/img/icon2.png" style="padding: 5px 10px;"></a>
-				<!--Hackathon Name-->
+				<!--Hackathon Name / Home Page-->
 				<a class="navbar-brand" href="index.html">Hackathon Event Tracker</a>
 				<!--Badges-->
 				<span class="badge"></span>
@@ -43,8 +45,6 @@
 			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 	    		<!--Left Side-->
 				<ul class="nav navbar-nav">
-					<!--Home Page-->
-					<li class="active"><a href="index.html">Command Central<span class="sr-only">(current)</span></a></li>
 					<!--Time Table-->
 					<li><a href="timetable.html">Timetable</a></li>
 				</ul>
@@ -90,43 +90,13 @@
 			</div>
 			<br>
 			<!--CoundDown Timer PLACED HERE-->
-			<p id="demo" style="text-align: center;font-size: 80px; font-weight: bolder; color: red;"></p>
+			<p id="demo"></p>
 		</div>
+
 			<!--
 				Timer Javascript
 				MUST BE MADE EXTERNAL FOR BOTH THE dashboard.html & index.html
 			-->
-		<script>
-		// Set the date we're counting down
-			//Please SET the ENDING Date HERE
-		var countDownDate = new Date("March 12, 2017 14:15:00").getTime();
-
-		// Update the count down every 1 second
-		var x = setInterval(function() {
-
-			// Get todays date and time
-			var now = new Date().getTime();
-			
-			// Find the distance between now an the count down date
-			var distance = countDownDate - now;
-			
-			// Time calculations for days, hours, minutes and seconds
-			var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-			var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-			var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-			var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-			
-			// Output the result in an element with id="demo"
-			document.getElementById("demo").innerHTML = days + "d " + hours + "h "
-			+ minutes + "m " + seconds + "s ";
-			
-			// If the count down is over, write some text 
-			if (distance < 0) {
-				clearInterval(x);
-				document.getElementById("demo").innerHTML = ".hack = End;";
-			}
-		}, 1000);
-		</script>
 		<!--Scrollable Timetable-->
 		<div class="container-fluid">
 			<!--Header-->
@@ -135,10 +105,13 @@
 			</div>
 			<!--Jumbotron-->
 			<div class="jumbotron">
-				<div class="container">
+				<div class="container-fluid">
 					<!--Table Name-->
 					<h2>Event TimeTable</h2>
-					<!--Event Schedule Table-->     
+					<!--Event Schedule Table--> 
+						<!--
+							Rezie Error Known at 470px
+						-->    
 					<table class="table">
 						<!--Schedule Header-->
 						<thead>
