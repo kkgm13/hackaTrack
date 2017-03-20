@@ -1,12 +1,17 @@
 body{
+	
+}
 
+#hackName{
+	font-size: 13px;
+	margin-left: -15px;
 }
 
 #demo{
 	text-align: center;
 	font-size: 25px;
 	font-weight: bolder;
-	color: red;"
+	color: red;
 }
 
 #foot{
@@ -21,8 +26,10 @@ body{
 	}
 }
 
-@media(min-width: 400px){
-
+@media(min-width: 370px){
+	#hackName{
+		font-size: 18px;
+	}
 }
 
 @media(min-width: 450px){
@@ -39,6 +46,6 @@ body{
 
 @media(min-width: 725px){
 	#demo{
-		font-size: 80px;
+		font-size: 75px;
 	}
 }

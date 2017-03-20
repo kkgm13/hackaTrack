@@ -1,6 +1,6 @@
 	// Set the date we're counting down
 		//Please SET the ENDING Date HERE
-	var countDownDate = new Date("March 15, 2017 18:00:00").getTime();
+	var countDownDate = new Date("Jan 1, 2018 00:00:00").getTime();
 
 	// Update the count down every 1 second
 	var x = setInterval(function() {
@@ -24,7 +24,9 @@
 		// If the count down is over, write some text 
 		if (distance < 0) {
 			clearInterval(x);
-			document.getElementById("demo").innerHTML = ".hack = End;";
+			document.getElementById("demo").innerHTML = "HACK ENDED!!";
+				//Resizing Testing
+			//document.getElementById("demo").innerHTML = "777d 77h 77m 77s!!";
 		}
 	}, 1000);
 
