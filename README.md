@@ -1,7 +1,7 @@
 # hackaTrack
 _Hackathon Event Tracker which monitors the activites of the intended hackathon_
 
-_Created in [BullHacks](https://bullhacks.io); Featured in [Major League Hacking](https://twitter.com/BullHacks/status/840927836424810496)_
+_Created in [BullHacks](https://bullhacks.io)_
 
 ###### _Note: This is a template! If any utilization of hackaTrack, please modify to suit the intended application_
 
