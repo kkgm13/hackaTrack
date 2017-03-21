@@ -5,12 +5,13 @@ _Created in [BullHacks](https://bullhacks.io)_
 
 ###### _Note: This is a template! If any utilization of hackaTrack, please modify to suit the intended application_
 
-# Features
+## Features
 * Countdown Timer to the end of the Hackathon
 * Event Panels to describe the official hackathon events
   * Event page also used to fully detail the page
 * Sponsor Panels with its own sponsor page
 * **MOBILE RESPONSIVE!!!**
+* Standard templates for all general (sponsor & events) pages stated with a template
 
 ### Problems Faced
 * Understanding Bootstrap correctly from simple front-end development
@@ -18,7 +19,7 @@ _Created in [BullHacks](https://bullhacks.io)_
 
 ### Future Updates:
 * Integration with EJS or SQL
-* Standard templates for all general pages
+* <del>Standard templates for all general pages</del>
 * Integration to GitHub Pages for template visualization
 
 # Created by:
