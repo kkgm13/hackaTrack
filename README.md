@@ -21,6 +21,7 @@ _Created in [BullHacks](https://bullhacks.io)_
 * Integration with EJS or SQL
 * <del>Standard templates for all general pages</del>
 * Integration to GitHub Pages for template visualization
+# Slack/Twitter API Integration
 
 # Created by:
 * [Kelvin M](https://github.com/kkgm13)
