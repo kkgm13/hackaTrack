@@ -3,20 +3,18 @@
 <head>
 	<!--Meta Data-->
 	<meta charset="utf-8">
-	<meta name="description" content="About the Hackathon">
+	<meta name="description" content="This is an open hackathon tracker template for hackathons to use. Please adjust this to 
+	your own hackathon needs.">
 	<meta name="keyword" content="hackathon, event, tracker, hackTrack">
-	<meta name="author" content="Kelvin and Milton">
+		<!-- DO NOT CHANGE DUE TO COPYRIGHT -->
+	<meta name="author" content="Kelvin M. and Milton R.">
 	<meta name="language" content="en-US">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="shortcut icon" href="graphics/img/icon.png"/>
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<!--Bootstrap CSS-->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-		<!--JQuery-->
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-		<!--JavaScript-->
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-	<!---->
+	<!--Title-->
 	<title>Admin Log In - Hackathon Event Tracker</title>
 </head>
 <body class="container-fluid">
@@ -52,20 +50,20 @@
 					<li class="dropdown">
 						<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Events<span class="caret"></span></a>
 						<ul class="dropdown-menu">
-							<li><a href="events1.html">Event 1</a></li>
-							<li><a href="events2.html">Event 2</a></li>
-							<li><a href="events3.html">Event 3</a></li>
-							<li><a href="events4.html">Event 4</a></li>
+							<li><a id="event1" href="events/events1.html">Event 1</a></li>
+							<li><a id="event2" href="events/events2.html">Event 2</a></li>
+							<li><a id="event3" href="events/events3.html">Event 3</a></li>
+							<li><a id="event4" href="events/events4.html">Event 4</a></li>
 						</ul>
 	        		</li>
 	        		<!--Sponsors-->
 					<li class="dropdown">
 						<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Sponsors<span class="caret"></span></a>
 						<ul class="dropdown-menu">
-							<li><a href="sponsor1.html">Sponsors 1</a></li>
-							<li><a href="sponsor2.html">Sponsors 2</a></li>
-							<li><a href="sponsor3.html">Sponsors 3</a></li>
-							<li><a href="sponsor4.html">Sponsors 4</a></li>
+							<li><a id="sponsor1" href="sponsors/sponsor1.html">Sponsors 1</a></li>
+							<li><a id="sponsor2" href="sponsors/sponsor2.html">Sponsors 2</a></li>
+							<li><a id="sponsor3" href="sponsors/sponsor3.html">Sponsors 3</a></li>
+							<li><a id="sponsor4" href="sponsors/sponsor4.html">Sponsors 4</a></li>
 						</ul>
 	        		</li>
 	        		<!--About-->
@@ -84,6 +82,7 @@
 				<div class="panel-heading" style="text-align: center;">
 					<h2 class="panel-title">Admin Log-In</h2>
 				</div>
+				<!-- Log In Form -->
 				<form method="post" action="dashboard.html">
 					<div class="panel-body">
 						<!--UserName-->
@@ -104,7 +103,7 @@
 							<span class="input-group-addon">
 								<input type="checkbox" aria-label="...">
 							</span>
-							<input type="text" class="form-control" placeholder="Remember Me"aria-label="..." disabled="disabled">
+							<input type="text" class="form-control" placeholder="Remember Me" aria-label="..." disabled="disabled">
 						</div>
 
 						<!--Button-->
@@ -117,11 +116,24 @@
 				</form>
 		</div>
 		<!--Footer-->
+		<!--Footer-->
 		<div class="page-footer" id="foot">
 			<h3>Copyright</h3>
 			<p>This template is created & copyrighted by <a href="https://github.com/kkgm13">Kelvin M.</a> & <a href="https://github.com/Milton-R">Milton R.</a> for any hackathon event tracking usage.</p>
 			<p>This is an open sourced Hackathon tracker template.</p>
+			<!--W3C CSS Validator-->
+			<p>
+			    <a href="http://jigsaw.w3.org/css-validator/check/referer">
+			        <img style="border:0;width:88px;height:31px"
+			            src="http://jigsaw.w3.org/css-validator/images/vcss"
+			            alt="Valid CSS!" />
+			    </a>
+			</p>
 		</div>
 	</div>
+		<!--JQuery-->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+		<!--JavaScript-->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </body>
 </html>

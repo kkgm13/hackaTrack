@@ -1,12 +1,15 @@
+/*Body Background*/
 body{
 	background-color: GhostWhite;
 }
 
+/*Title Name*/
 #hackName{
 	font-size: 13px;
 	margin-left: -15px;
 }
 
+/*Timer*/
 #demo{
 	text-align: center;
 	font-size: 25px;
@@ -14,12 +17,14 @@ body{
 	color: red;
 }
 
+/*Footer*/
 #foot{
 	background-color: #999999;
 	color: white;
     text-align: center;	
 }
 
+/*Media Device Changes*/
 @media(min-width: 320px){
 	#demo{
 		font-size: 35px;

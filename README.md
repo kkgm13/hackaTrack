@@ -1,9 +1,17 @@
 # hackaTrack
-_Hackathon Event Tracker which monitors the activites of the intended hackathon_
+_Hackathon Event Tracker which monitors activites and events of a hackathon_
 
-_Created in [BullHacks](https://bullhacks.io)_
+_Created at [BullHacks](https://bullhacks.io)_
 
-###### _Note: This is a template! If any utilization of hackaTrack, please modify to suit the intended application_
+###### _Note: This is a template!_
+## hackATrack Hackathon Utilization
+If a Hackathon would like to use this template, please:
+* Fork This
+* Modify to suit the intended Hackathon
+* Append the Hackathon Organization Name on the Author Meta-Tag
+* Append that it is utilized for the intended hackathon, but leave the original creator names.
+* Have the URL stated as _"hackathonName-hackatrack.io"_
+
 
 ## Features
 * Countdown Timer to the end of the Hackathon
@@ -11,16 +19,20 @@ _Created in [BullHacks](https://bullhacks.io)_
   * Event page also used to fully detail the page
 * Sponsor Panels with its own sponsor page
 * **MOBILE RESPONSIVE!!!**
-* Standard templates for all general (sponsor & events) pages stated with a template
+* Standard templates for all general (sponsor & events) pages
+  * [Stated as "----Template.html"]
+* Hidden Admin Access
 
 ### Problems Faced
-* Understanding Bootstrap correctly from simple front-end development
+* Understanding Bootstrap correctly for Front-end Development
 * UI Interface for usability and readability
+* Understanding Core Data Locations for Robustness
+* Back-End Logic Support Ideas
 
 ### Future Updates:
-* Integration with EJS or SQL
+* Back-end Integration with EJS, React, PHP or SQL
 * <del>Standard templates for all general pages</del>
-* Integration to GitHub Pages for template visualization
+* Integration to GitHub Pages for template visualization **Coming Shortly**
 # Slack/Twitter API Integration
 
 # Created by:

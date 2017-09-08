@@ -3,20 +3,18 @@
 <head>
 	<!--Meta Data-->
 	<meta charset="utf-8">
-	<meta name="description" content="About the Hackathon">
+	<meta name="description" content="This is an open hackathon tracker template for hackathons to use. Please adjust this to 
+	your own hackathon needs.">
 	<meta name="keyword" content="hackathon, event, tracker, hackTrack">
-	<meta name="author" content="Kelvin and Milton">
+		<!-- DO NOT CHANGE DUE TO COPYRIGHT -->
+	<meta name="author" content="Kelvin M. and Milton R.">
 	<meta name="language" content="en-US">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="shortcut icon" href="graphics/img/icon.png"/>
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<!--Bootstrap CSS-->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-		<!--JQuery-->
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-		<!--JavaScript-->
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-	<!---->
+	<!--Title-->
 	<title>Hackathon Schedule - Hackathon Event Tracker</title>
 </head>
 <body class="container-fluid">
@@ -48,25 +46,26 @@
 				<ul class="nav navbar-nav navbar-right">
 					<!--Events-->
 					<li class="dropdown">
-						<a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Events<span class="caret"></span></a>
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Events<span class="caret"></span></a>
 						<ul class="dropdown-menu">
-							<li><a href="events1.html">Event 1</a></li>
-							<li><a href="events2.html">Event 2</a></li>
-							<li><a href="events3.html">Event 3</a></li>
-							<li><a href="events4.html">Event 4</a></li>
+							<!-- <li class="active"><a>Event #</a></li> -->
+							<li><a id="event1" href="events/events1.html">Event 1</a></li>
+							<li><a id="event2" href="events/events2.html">Event 2</a></li>
+							<li><a id="event3" href="events/events3.html">Event 3</a></li>
+							<li><a id="event4" href="events/events4.html">Event 4</a></li>
 						</ul>
 	        		</li>
 	        		<!--Sponsors-->
 					<li class="dropdown">
 						<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Sponsors<span class="caret"></span></a>
 						<ul class="dropdown-menu">
-							<li><a href="sponsor1.html">Sponsors 1</a></li>
-							<li><a href="sponsor2.html">Sponsors 2</a></li>
-							<li><a href="sponsor3.html">Sponsors 3</a></li>
-							<li><a href="sponsor4.html">Sponsors 4</a></li>
+							<li><a id="sponsor1" href="sponsors/sponsor1.html">Sponsors 1</a></li>
+							<li><a id="sponsor2" href="sponsors/sponsor2.html">Sponsors 2</a></li>
+							<li><a id="sponsor3" href="sponsors/sponsor3.html">Sponsors 3</a></li>
+							<li><a id="sponsor4" href="sponsors/sponsor4.html">Sponsors 4</a></li>
 						</ul>
 	        		</li>
-	        		<!--About-->
+					<!--About Us (Hackathon Organizers)-->
 	        		<li><a href="aboutUs.html">About Us</a></li>
 	        		<!--Log Out--
 	        		<li><a href="index.html">Log Out</a></li>-->
@@ -74,12 +73,24 @@
 			</div><!-- /.navbar-collapse -->
 		</div><!-- /.container-fluid -->
 	</nav>
+
 	<!--Table Container-->
 	<div class="container-fluid">
+		<!--Announcements Banner-->
+		<div class="alert alert-success alert-dismissible" role="alert">
+			<button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+			<strong id="announceHead">Event Starting:</strong>
+			<span id="announceMsg">This event is starting in a few minutes</span>
+		</div>
 		<!--Table Name-->
 		<h2>Event TimeTable</h2>
 			<!--Event Schedule Table-->     
 		<table class="table">
+			<thead>
+				<tr>
+					<th colspan="4" style="background-color: red;">Day 1</tr>
+				</tr>
+			</thead>
 			<!--Schedule Header-->
 			<thead>
 				<tr>
@@ -91,115 +102,160 @@
 			</thead>
 				<!--Schedule Content-->
 			<tbody>
-				<!--Row 1-->
+				
+				<!--Row -->
 				<tr>
-					<td>01/12/2000 - 09:00</td>
-					<td>Register</td>
+					<td>09:00</td>
+					<td>Register Opens</td>
 					<td>Main Hall</td>
 					<td>Hackathon Group</td>
 				</tr>
 				<!--Row -->
 				<tr>
-					<td>01/12/2000 - 10:30</td>
+					<td>10:30</td>
 					<td>Open Ceremony</td>
 					<td>Main Hall</td>
 					<td>Hackathon Group</td>
 				</tr>
 					<!--Row -->
 				<tr>
-					<td>01/12/2000 - 12:00</td>
+					<td>12:00</td>
 					<td>Hacking Begins</td>
 					<td>Hacking Rooms</td>
 					<td>Hackathon Group</td>
 				</tr>
 					<!--Row -->
 				<tr>
-					<td>01/12/2000 - 12:30</td>
+					<td>12:30</td>
 					<td>Lunch</td>
 					<td>Lunch Area</td>
 					<td>Hackathon Group</td>
 				</tr>
 					<!--Row -->
 				<tr>
-					<td>01/12/2000 - 15:00</td>
+					<td>15:00</td>
 					<td>Event 1</td>
 					<td>Workshop Room 1</td>
 					<td>Sponsor Name</td>
 				</tr>
 					<!--Row -->
 				<tr>
-					<td>01/12/2000 - 15:00</td>
+					<td>15:00</td>
 					<td>Event 2</td>
 					<td>Workshop Room 2</td>
 					<td>Sponsor Name</td>
 				</tr>
 					<!--Row -->
 				<tr>
-					<td>01/12/2000 - 16:00</td>
+					<td>16:00</td>
 					<td>Event 3</td>
 					<td>Workshop Room 1</td>
 					<td>Sponsor Name</td>
 				</tr>
 					<!--Row -->
 				<tr>
-					<td>01/12/2000 - 18:00</td>
+					<td>18:00</td>
 					<td>Dinner</td>
 					<td>Lunch Area</td>
 					<td>Hackathon Group</td>
 				</tr>
 					<!--Row -->
 				<tr>
-					<td>01/12/2000 - 20:00</td>
+					<td>20:00</td>
 					<td>Event 4</td>
 					<td>Workshop Room 1</td>
 					<td>Sponsor Name</td>
 				</tr>
 					<!--Row -->
 				<tr>
-					<td>01/12/2000 - 21:00</td>
-					<td>Have a break, have a game session</td>
-					<td>Main Hall</td>
+					<td>21:00</td>
+					<td>Have a break, have a Game session</td>
+					<td>Break Room</td>
 					<td>Hackathon Group</td>
 				</tr>
 					<!--Row -->
 				<tr>
-					<td>01/12/2000 - 22:00</td>
+					<td>22:00</td>
 					<td>MLH Game Event</td>
 					<td>Workshop Room 1</td>
 					<td>Major League Hacking</td>
 				</tr>
+			</tbody>
+			<thead>
+				<tr>
+					<th colspan="4" style="background-color: red;">Day 2</tr>
+				</tr>
+			</thead>
+			<!--Schedule Header-->
+			<thead>
+				<tr>
+					<th>Starting Time</th>
+					<th>Event Name</th>
+					<th>Location</th>
+					<th>Modulator</th>
+				</tr>
+			</thead>
+			<tbody>
 					<!--Row -->
 				<tr>
-					<td>02/12/2000 - 8:00</td>
-					<td>Breakfast</td>
+					<td>00:00</td>
+					<td>Midnight Snacks</td>
 					<td>Lunch Area</td>
-					<td>Hacking Group</td>
+					<td>Hackathon Group</td>
 				</tr>
 					<!--Row -->
 				<tr>
-					<td>01/12/2000 - 12:00</td>
+					<td>08:00</td>
+					<td>Breakfast</td>
+					<td>Lunch Area</td>
+					<td>Hackathon Group</td>
+				</tr>
+				<!--Row -->
+				<tr>
+					<td>11:30</td>
+					<td>Last 30 Minute Devpost Reminder</td>
+					<td>Hacking Rooms</td>
+					<td>Hackathon Group/DevPost</td>
+				</tr>
+					<!--Row -->
+				<tr>
+					<td>11:50</td>
+					<td>Last Devpost Reminder</td>
+					<td>Hacking Rooms</td>
+					<td>Hackathon Group/DevPost</td>
+				</tr>
+					<!--Row -->
+				<tr>
+					<td>12:00</td>
 					<!--Please reference the hackathon devpost -->
-					<td>Hacking Ends!!! - Remember to publish to <strong><a href="https://devpost.com/">DevPost</a></strong></td>
+					<td>Hacking Ends!!! - Remember to publish to <strong><a href="https://devpost.com/">Devpost</a></strong></td>
 					<td>Hacking Rooms</td>
 					<td>DevPost</td>
 				</tr>
 					<!--Row -->
 				<tr>
-					<td>02/12/2000 - 12:10</td>
+					<td>12:10</td>
 					<td>Lunch</td>
 					<td>Lunch Area</td>
 					<td>Hacking Group</td>
 				</tr>
 					<!--Row -->
 				<tr>
-					<td>02/12/2000 - 14:00</td>
+					<td>14:00</td>
 					<td>Demo</td>
 					<td>Main Hall</td>
-					<td>Hacking Group</td>
+					<td>Hackathon Group</td>
 				</tr>
 					<!--Row -->
 				<tr>
-					<td>02/12/2000 - 16:00</td>
+					<td>15:30</td>
+					<td>Award Ceremony</td>
+					<td>Main Hall</td>
+					<td>Hackathon Group</td>
+				</tr>
+					<!--Row -->
+				<tr>
+					<td>16:00</td>
 					<td>Closing Remarks</td>
 					<td>Main Hall</td>
 					<td>Hackathon Group</td>
@@ -211,7 +267,19 @@
 			<h3>Copyright</h3>
 			<p>This template is created & copyrighted by <a href="https://github.com/kkgm13">Kelvin M.</a> & <a href="https://github.com/Milton-R">Milton R.</a> for any hackathon event tracking usage.</p>
 			<p>This is an open sourced Hackathon tracker template.</p>
+			<!--W3C CSS Validator-->
+			<p>
+			    <a href="http://jigsaw.w3.org/css-validator/check/referer">
+			        <img style="border:0;width:88px;height:31px"
+			            src="http://jigsaw.w3.org/css-validator/images/vcss"
+			            alt="Valid CSS!" />
+			    </a>
+			</p>
 		</div>
 	</div>
+		<!--JQuery-->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+		<!--JavaScript-->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </body>
 </html>

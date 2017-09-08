@@ -3,20 +3,19 @@
 <head>
 	<!--Meta Data-->
 	<meta charset="utf-8">
-	<meta name="description" content="About the Hackathon">
+	<meta name="description" content="This is an open hackathon tracker template for hackathons to use. Please adjust this to 
+	your own hackathon needs.">
 	<meta name="keyword" content="hackathon, event, tracker, hackTrack">
-	<meta name="author" content="Kelvin and Milton">
+		<!-- DO NOT CHANGE DUE TO COPYRIGHT -->
+	<meta name="author" content="Kelvin M. and Milton R.">
 	<meta name="language" content="en-US">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<!--Title-->
-	<title>Dashboard - Hackathon Event Tracker</title>
-		<!--Tab Icon-->
 	<link rel="shortcut icon" href="graphics/img/icon.png"/>
-	<!--External Information-->
-		<!---->
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<!--Bootstrap CSS-->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<!--Title-->
+	<title>Dashboard - Hackathon Event Tracker</title>
 </head>
 <body class="container-fluid">
 	<!--Navbar-->
@@ -38,7 +37,7 @@
 				<!--Badges-->
 				<span class="badge"></span>
 			</div>
-		    <!--Nav Bar-->
+		    <!--Admin Nav Bar-->
 			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 	    		
 	    		<!--Left Side-->
@@ -54,20 +53,21 @@
 					<li class="dropdown">
 						<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Events<span class="caret"></span></a>
 						<ul class="dropdown-menu">
-							<li><a href="events1.html">Event 1</a></li>
-							<li><a href="events2.html">Event 2</a></li>
-							<li><a href="events3.html">Event 3</a></li>
-							<li><a href="events4.html">Event 4</a></li>
+							<!-- <li class="active"><a>Event #</a></li> --
+							<li><a id="event1" href="events/events1.html">Event 1</a></li>
+							<li><a id="event2" href="events/events2.html">Event 2</a></li>
+							<li><a id="event3" href="events/events3.html">Event 3</a></li>
+							<li><a id="event4" href="events/events4.html">Event 4</a></li>
 						</ul>
 	        		</li>
 	        		<!--Sponsors--
 					<li class="dropdown">
 						<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Sponsors<span class="caret"></span></a>
 						<ul class="dropdown-menu">
-							<li><a href="sponsor1.html">Sponsors 1</a></li>
-							<li><a href="sponsor2.html">Sponsors 2</a></li>
-							<li><a href="sponsor3.html">Sponsors 3</a></li>
-							<li><a href="sponsor4.html">Sponsors 4</a></li>
+							<li><a id="sponsor1" href="sponsors/sponsor1.html">Sponsors 1</a></li>
+							<li><a id="sponsor2" href="sponsors/sponsor2.html">Sponsors 2</a></li>
+							<li><a id="sponsor3" href="sponsors/sponsor3.html">Sponsors 3</a></li>
+							<li><a id="sponsor4" href="sponsors/sponsor4.html">Sponsors 4</a></li>
 						</ul>
 	        		</li>
 	        		<!--About--
@@ -84,7 +84,8 @@
 		<!--Announcements Banner-->
 		<div class="alert alert-success alert-dismissible" role="alert">
 			<button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-			<strong>Event Posted</strong> This event has been added and notified to all
+			<strong id="adminAnnounceHead">Event Posted</strong>
+			<span id="adminAnnnounceMsg">This event has been added and notified to all</span>
 		</div>
 		<!--Admin User Splash-->
 		<div class="container-fluid" style="background-color: grey; padding-bottom: 20px; border-radius: 50px; color: white;">
@@ -110,7 +111,7 @@
 				<!--Button-->
 				<div class="btn-group btn-group-justified" role="group">
 					<div class="btn-group" role="group">
-						<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#timeModal" data-whatever="@getbootstrap"><span class="glyphicon glyphicon-time" aria-hidden="true"></span>    Change Time</button>
+						<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#timeModal" data-whatever="@getbootstrap"><span class="glyphicon glyphicon-time" aria-hidden="true"></span>Change Time</button>
 					</div>
 				</div>
 				<!--Time Modal-->
@@ -159,10 +160,6 @@
 				</div>
 			</div>
 		</div>
-			<!--
-				Timer Javascript
-				MUST BE MADE EXTERNAL FOR BOTH THE dashboard.html & index.html
-			-->
 		<!--Communication Controls-->
 		<div class="container-fluid">
 			<div class="page-header">
@@ -246,36 +243,8 @@
 									<label for="message-text" class="control-label">Message:</label>
 									<textarea class="form-control" id="message-text"></textarea>
 								</div>
-							</form>
-						</div>
-						<div class="btn-group btn-group-justified" role="group">
-							<div class="btn-group modal-footer" role="group">
-								<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-							</div>
-							<div class="btn-group modal-footer" role="group">
-								<button type="button" class="btn btn-primary">Send Notifications</button>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-			<!--Notificaiton Modal-->
-			<div class="modal fade" id="notificationModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel">
-				<div class="modal-dialog" role="document">
-					<div class="modal-content">
-						<div class="modal-header">
-							<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-							<h4 class="modal-title" id="exampleModalLabel">New Notification</h4>
-						</div>
-						<div class="modal-body">
-							<form>
-								<div class="form-group">
-									<label for="recipient-name" class="control-label">Notification Title:</label>
-									<input type="text" class="form-control" id="alert-name">
-								</div>
-								<div class="form-group">
-									<label for="message-text" class="control-label">Notification Message:</label>
-									<textarea class="form-control" id="message-text"></textarea>
+								<div>
+									
 								</div>
 							</form>
 						</div>
@@ -362,6 +331,7 @@
 					</div>
 				</div>
 			</div>
+			<!-- Event Schedules -->
 			<div class="col-xs-12 col-md-6">
 				<div class="thumbnail">
 					<div class="caption">
@@ -371,7 +341,7 @@
 							<div class="panel-heading">Now Happening</div>
 							<div class="panel-body">
 								<strong>Event Name </strong>
-								<p><i>Description</i></p>
+								<p><i>Description:</i></p>
 								<p>Location: </p>
 							</div>
 
@@ -406,6 +376,14 @@
 			<h3>Copyright</h3>
 			<p>This template is created & copyrighted by <a href="https://github.com/kkgm13">Kelvin M.</a> & <a href="https://github.com/Milton-R">Milton R.</a> for any hackathon event tracking usage.</p>
 			<p>This is an open sourced Hackathon tracker template.</p>
+			<!--W3C CSS Validator-->
+			<p>
+			    <a href="http://jigsaw.w3.org/css-validator/check/referer">
+			        <img style="border:0;width:88px;height:31px"
+			            src="http://jigsaw.w3.org/css-validator/images/vcss"
+			            alt="Valid CSS!" />
+			    </a>
+			</p>
 		</div>
 	</div>
 		<!--JQuery-->
