@@ -32,8 +32,8 @@ If a Hackathon would like to use this template, please:
 ### Future Updates:
 * Back-end Integration with EJS, React, PHP or SQL
 * <del>Standard templates for all general pages</del>
-* Integration to GitHub Pages for template visualization **Coming Shortly**
-# Slack/Twitter API Integration
+* Integration to GitHub Pages for template visualization [Now Live](https://kkgm13.github.io/hackaTrack/)
+* Slack/Twitter API Integration
 
 # Created by:
 * [Kelvin M](https://github.com/kkgm13)
