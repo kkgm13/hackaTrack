@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<!--Meta Data-->
+	<meta charset="utf-8">
+	<meta name="description" content="This is an open hackathon tracker template for hackathons to use. Please adjust this to 
+	your own hackathon needs.">
+	<meta name="keyword" content="hackathon, event, tracker, hackTrack">
+		<!-- DO NOT CHANGE DUE TO COPYRIGHT -->
+	<meta name="author" content="Kelvin M. and Milton R.">
+	<meta name="language" content="en-US">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="shortcut icon" href="graphics/img/icon.png"/>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<!--Bootstrap CSS-->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<!--Title-->
+	<title>Dashboard - Hackathon Event Tracker</title>
+	<!-- Electron register for jQuery -->
+	<script>
+		delete module.exports
+	</script>
+</head>
+<body class="container-fluid">
+	<!--Navbar-->
+	<nav class="navbar navbar-inverse navbar-static-top">
+		<!-- Nav Container -->
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<!--Mobile Aria-->
+		    	<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<!--Logo Image-->
+				<img class="navbar-brand" src="graphics/img/icon2.png" alt="Hackathon Logo" style="padding: 5px 10px;">
+				<!--Hackathon Name-->
+				<a class="navbar-brand" id="hackName">Hackathon Event Tracker</a>
+				<!--Badges-->
+				<span class="badge"></span>
+			</div>
+		    <!--Admin Nav Bar-->
+			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+	    		
+	    		<!--Left Side-->
+				<ul class="nav navbar-nav">
+					<!--Home Page--
+					<li class="active"><a href="#">Command Central<span class="sr-only">(current)</span></a></li>
+					<!--Time Table--
+					<li><a href="timetable.html">Timetable</a></li>-->
+				</ul>
+				<!--Right Side-->
+				<ul class="nav navbar-nav navbar-right">
+					<!--Events--
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Events<span class="caret"></span></a>
+						<ul class="dropdown-menu">
+							<!-- <li class="active"><a>Event #</a></li> --
+							<li><a id="event1" href="events/events1.html">Event 1</a></li>
+							<li><a id="event2" href="events/events2.html">Event 2</a></li>
+							<li><a id="event3" href="events/events3.html">Event 3</a></li>
+							<li><a id="event4" href="events/events4.html">Event 4</a></li>
+						</ul>
+	        		</li>
+	        		<!--Sponsors--
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Sponsors<span class="caret"></span></a>
+						<ul class="dropdown-menu">
+							<li><a id="sponsor1" href="sponsors/sponsor1.html">Sponsors 1</a></li>
+							<li><a id="sponsor2" href="sponsors/sponsor2.html">Sponsors 2</a></li>
+							<li><a id="sponsor3" href="sponsors/sponsor3.html">Sponsors 3</a></li>
+							<li><a id="sponsor4" href="sponsors/sponsor4.html">Sponsors 4</a></li>
+						</ul>
+	        		</li>
+	        		<!--About--
+	        		<li><a href="aboutUs.html">About Us</a></li>
+	        		-->
+	        		<!--Log Out-->
+	        		<li><a href="index.html">Log Out</a></li>
+				</ul>
+			</div><!-- /.navbar-collapse -->
+		</div><!-- /.container-fluid -->
+	</nav>
+	<!--Container-->
+	<div class="container-fluid">	
+		<!--Announcements Banner-->
+		<div class="alert alert-success alert-dismissible" role="alert">
+			<button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+			<strong id="adminAnnounceHead">Event Posted</strong>
+			<span id="adminAnnnounceMsg">This event has been added and notified to all</span>
+		</div>
+		<!--Admin User Splash-->
+		<div class="container-fluid" style="background-color: grey; padding-bottom: 20px; border-radius: 50px; color: white;">
+			<!--Welcome Back Text-->
+			<div style="text-align: center;">
+				<h2>Welcome Back, <span id="adminName">adminName</span>!</h2>
+			</div>
+			<div style="text-align: center;">
+				<img class="img-circle" img="adminImage" src="graphics/img/background.png" height="150px" width="150px">
+			</div>
+		</div>
+		<br><br>
+		<!--Timer-->
+		<div class="container-fluid">
+			<div class="page-header">
+				<h2>Countdown to the End</h2>
+			</div>
+			<br>
+			<!--CoundDown Timer PLACED HERE-->
+			<p id="demo"></p>
+			<!--Change Time Parameters-->
+			<div class="container-fluid">
+				<!--Button-->
+				<div class="btn-group btn-group-justified" role="group">
+					<div class="btn-group" role="group">
+						<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#timeModal" data-whatever="@getbootstrap"><span class="glyphicon glyphicon-time" aria-hidden="true"></span>Change Time</button>
+					</div>
+				</div>
+				<!--Time Modal-->
+				<div class="modal fade" id="timeModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel">
+					<div class="modal-dialog" role="document">
+						<div class="modal-content">
+							<div class="modal-header">
+								<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+								<h4 class="modal-title" id="exampleModalLabel">Time</h4>
+							</div>
+							<div class="modal-body">
+								<form>
+									<div class="form-group">
+										<!--Month-->
+										<label for="recipient-name" class="control-label">Change Month</label>
+										<input type="text" class="form-control" id="alert-name">
+										<!--Day-->
+										<label for="recipient-name" class="control-label">Change Day</label>
+										<input type="text" class="form-control" id="alert-name">
+										<!--Year-->
+										<label for="recipient-name" class="control-label">Change Year</label>
+										<input type="text" class="form-control" id="alert-name">
+										<!--Hour-->
+										<label for="recipient-name" class="control-label">Change Hours</label>
+										<input type="text" class="form-control" id="alert-name">
+										<!--Minute-->
+										<label for="recipient-name" class="control-label">Change Minutes</label>
+										<input type="text" class="form-control" id="alert-name">
+										<!--Seconds-->
+										<label for="recipient-name" class="control-label">Change Seconds</label>
+										<input type="text" class="form-control" id="alert-name">
+									</div>
+									
+								</form>
+							</div>
+							<div class="btn-group btn-group-justified" role="group">
+								<div class="btn-group modal-footer" role="group">
+									<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+								</div>
+								<div class="btn-group modal-footer" role="group">
+									<button type="button" class="btn btn-primary">Send Event</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--Communication Controls-->
+		<div class="container-fluid">
+			<div class="page-header">
+				<h2>Communication Controls</h2>
+			</div>
+		</div>
+		
+		<div class="container-fluid">
+			<div class="btn-group btn-group-justified" role="group">
+				<!--Events Button-->
+				<div class="btn-group" role="group">
+					<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#eventModal" data-whatever="@getbootstrap"><span class="glyphicon glyphicon-calendar" aria-hidden="true"></span>    Add Event</button>
+				</div>
+				<!--Alert Button-->
+				<div class="btn-group" role="group">
+					<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#alertModal" data-whatever="@mdo"><span class="glyphicon glyphicon-bell" aria-hidden="true"></span>  Add Alert</button>
+				</div>
+				<!--Notification Button-->
+				<div class="btn-group" role="group">
+					<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#notificationModal" data-whatever="@fat"><span class="glyphicon glyphicon-bullhorn" aria-hidden="true"></span>    Add Notification</button>
+				</div>
+			</div>
+			<!--Event Modal-->	
+			<div class="modal fade" id="eventModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel">
+				<div class="modal-dialog" role="document">
+					<div class="modal-content">
+						<div class="modal-header">
+							<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+							<h4 class="modal-title" id="exampleModalLabel">New Event</h4>
+						</div>
+						<div class="modal-body">
+							<form>
+								<div class="form-group">
+									<label for="recipient-name" class="control-label">Event Title:</label>
+									<input type="text" class="form-control" id="alert-name">
+								</div>
+								<div class="form-group">
+									<label for="message-text" class="control-label">Event Description:</label>
+									<textarea class="form-control" id="message-text"></textarea>
+								</div>
+								<div class="form-group">
+									<label for="recipient-name" class="control-label">Event Time:</label>
+									<input type="time" class="form-control" id="alert-event-time">
+								</div>
+								<div class="form-group">
+									<label for="message-text" class="control-label">Location:</label>
+									<input type="text" class="form-control" id="alert-location">
+								</div>
+								<div class="form-group">
+									<label for="message-text" class="control-label">Organizer:</label>
+									<input type="text" class="form-control" id="alert-organizer">
+								</div>
+							</form>
+						</div>
+						<div class="btn-group btn-group-justified" role="group">
+							<div class="btn-group modal-footer" role="group">
+								<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+							</div>
+							<div class="btn-group modal-footer" role="group">
+								<button type="button" class="btn btn-primary">Send Event</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!--Alert Modal-->
+			<div class="modal fade" id="alertModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel">
+				<div class="modal-dialog" role="document">
+					<div class="modal-content">
+						<div class="modal-header">
+							<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+							<h4 class="modal-title" id="exampleModalLabel">New Alert</h4>
+						</div>
+						<div class="modal-body">
+							<form>
+								<div class="form-group">
+									<label for="recipient-name" class="control-label">Alert Title:</label>
+									<input type="text" class="form-control" id="alert-name">
+								</div>
+								<div class="form-group">
+									<label for="message-text" class="control-label">Message:</label>
+									<textarea class="form-control" id="message-text"></textarea>
+								</div>
+								<div>
+									
+								</div>
+							</form>
+						</div>
+						<div class="btn-group btn-group-justified" role="group">
+							<div class="btn-group modal-footer" role="group">
+								<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+							</div>
+							<div class="btn-group modal-footer" role="group">
+								<button type="button" class="btn btn-primary">Send Notifications</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<br>
+		<!--Add-->
+		<div class="container-fluid">
+			<div class="page-header">
+				<h2>Admin Controls</h2>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-xs-12 col-md-6">
+				<div class="thumbnail">
+					<div class="caption">
+						<h3>Announcements</h3>
+						<div class="panel panel-default">
+							<!-- Default panel contents -->
+							<div class="panel-heading">Latest Anouncements</div>
+							<div class="panel-body">
+								<p>
+									<strong id="announcementTitle">eventName: </strong>
+									<span id="announcementDescription">announcementDescription</span>
+								</p>
+							</div>
+
+							<!-- List group -->
+							<div class="panel-heading">Later Events</div>
+							<ul class="list-group">
+								<li class="list-group-item">
+									<p>
+										<strong id="announcementTitle">eventName: </strong>
+										<span id="announcementDescription">announcementDescription</span>
+									</p>
+								</li>
+								<li class="list-group-item">
+									<p>
+										<strong id="announcementTitle">eventName: </strong>
+										<span id="announcementDescription">announcementDescription</span>
+									</p>
+								</li>
+								<li class="list-group-item">
+									<p>
+										<strong id="announcementTitle">eventName: </strong>
+										<span id="announcementDescription">announcementDescription</span>
+									</p>
+								</li>
+								<li class="list-group-item">
+									<p>
+										<strong id="announcementTitle">eventName: </strong>
+										<span id="announcementDescription">announcementDescription</span>
+									</p>
+								</li>
+								<li class="list-group-item">
+									<p>
+										<strong id="announcementTitle">eventName: </strong>
+										<span id="announcementDescription">announcementDescription</span>
+									</p>
+								</li>
+								<li class="list-group-item">
+									<p>
+										<strong id="announcementTitle">eventName: </strong>
+										<span id="announcementDescription">announcementDescription</span>
+									</p>
+								</li>
+							</ul>
+						</div>
+						<div class="btn-group btn-group-justified" role="group" aria-label="...">
+							<div class="btn-group" role="group">
+								<button type="button" class="btn btn-primary" role="button">Check all Announcements</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- Event Schedules -->
+			<div class="col-xs-12 col-md-6">
+				<div class="thumbnail">
+					<div class="caption">
+						<h3>Events Schedule</h3>
+						<div class="panel panel-default">
+							<!-- Default panel contents -->
+							<div class="panel-heading">Now Happening</div>
+							<div class="panel-body">
+								<strong>Event Name </strong>
+								<p><i>Description:</i></p>
+								<p>Location: </p>
+							</div>
+
+							<!-- List group -->
+							<div class="panel-heading">Later Events</div>
+							<ul class="list-group">
+								<li class="list-group-item">
+									<p>Event Name </p>
+									<p>Location: </p>
+								</li>
+								<li class="list-group-item">
+									<p>Event Name </p>
+									<p>Location: </p>
+								</li>
+								<li class="list-group-item">
+									<p>Event Name </p>
+									<p>Location: </p>
+								</li>
+							</ul>
+						</div>
+						<div class="btn-group btn-group-justified" role="group" aria-label="...">
+							<div class="btn-group" role="group">
+								<button type="button" class="btn btn-primary" role="button">Check all Events</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--Footer-->
+		<div class="page-footer" id="foot">
+			<h3>Copyright</h3>
+			<p>This template is created & copyrighted by <a href="https://github.com/kkgm13">Kelvin M.</a> & <a href="https://github.com/Milton-R">Milton R.</a> for any hackathon event tracking usage.</p>
+			<p>This is an open sourced Hackathon tracker template.</p>
+			<!--W3C CSS Validator-->
+			<p>
+			    <a href="http://jigsaw.w3.org/css-validator/check/referer">
+			        <img style="border:0;width:88px;height:31px"
+			            src="http://jigsaw.w3.org/css-validator/images/vcss"
+			            alt="Valid CSS!" />
+			    </a>
+			</p>
+		</div>
+	</div>
+		<!--JQuery-->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+		<!--JavaScript-->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		<!--Timer Javascript-->
+	<script type="text/javascript" src="js/timer.js"></script>
+</body>
+</html>

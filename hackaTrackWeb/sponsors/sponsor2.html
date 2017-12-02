@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<!--Meta Data-->
+	<meta charset="utf-8">
+	<meta name="description" content="This is an open hackathon tracker template for hackathons to use. Please adjust this to 
+	your own hackathon needs.">
+	<meta name="keyword" content="hackathon, event, tracker, hackTrack">
+		<!-- DO NOT CHANGE DUE TO COPYRIGHT -->
+	<meta name="author" content="Kelvin M. and Milton R.">
+	<meta name="language" content="en-US">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="shortcut icon" href="../graphics/img/icon.png"/>
+	<link rel="stylesheet" type="text/css" href="../css/style.css">
+	<!--Bootstrap CSS-->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<!--Title-->
+	<title>Sponsors: Aston Computer Science Society (ACSS) - Hackathon Event Tracker</title>
+	<!-- Electron register for jQuery -->
+	<script>
+		delete module.exports
+	</script>
+</head>
+<body class="container-fluid">
+	<!--Navbar-->
+	<nav class="navbar navbar-inverse navbar-static-top">
+		<!-- Nav Container -->
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<!--Mobile Aria-->
+		    	<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<!--Logo Image-->
+				<img class="navbar-brand" src="../graphics/img/icon2.png" alt="Hackathon Logo" style="padding: 5px 10px;">
+				<!--Hackathon Name / Home Page-->
+				<a class="navbar-brand" id="hackName" href="../index.html">Hackathon Event Tracker</a>
+				<!--Badges-->
+				<span class="badge"></span>
+			</div>
+		    <!--Nav Bar-->
+			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+	    		<!--Left Side-->
+				<ul class="nav navbar-nav">
+					<!--Time Table-->
+					<li><a href="../timetable.html">Timetable</a></li>
+				</ul>
+				<!--Right Side-->
+				<ul class="nav navbar-nav navbar-right">
+					<!--Events-->
+					<li class="dropdown">
+						<a href="" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Events<span class="caret"></span></a>
+						<ul class="dropdown-menu">
+							<li><a id="event1" href="../events/events1.html">Event 1</a></li>
+							<li><a id="event2" href="../events/events2.html">Event 2</a></li>
+							<li><a id="event3" href="../events/events3.html">Event 3</a></li>
+							<li><a id="event4" href="../events/events4.html">Event 4</a></li>
+						</ul>
+	        		</li>
+	        		<!--Sponsors-->
+					<li class="dropdown active">
+						<a href="" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Sponsors<span class="caret"></span></a>
+						<ul class="dropdown-menu">
+							<li><a id="sponsor1" href="sponsor1.html">Sponsors 1</a></li>
+							<li class="active"><a>Sponsors 2</a></li>
+							<li><a id="sponsor3" href="sponsor3.html">Sponsors 3</a></li>
+							<li><a id="sponsor4" href="sponsor4.html">Sponsors 4</a></li>
+						</ul>
+	        		</li>
+	        		<!--About Us (Hackathon Organizers)-->
+	        		<li><a href="../aboutUs.html">About Us</a></li>
+	        		<!--Log Out--
+	        		<li><a href="index.html">Log Out</a></li>-->
+				</ul>
+			</div><!-- /.navbar-collapse -->
+		</div><!-- /.container-fluid -->
+	</nav>
+	<!--Container-->
+	<div class="container-fluid">	
+		<!--Announcements Banner-->
+		<div class="alert alert-success alert-dismissible" role="alert">
+			<button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+			<strong id="announceHead">Event Starting:</strong>
+			<span id="announceMsg">This event is starting in a few minutes</span>
+		</div>
+		<!--Logo-->
+		<div class="row">
+			<div class="col-sm-12">
+				<div class="thumbnail">
+					<img src="../graphics/img/acss-logo.png" alt="Company">
+					<div class="container-fluid">
+						<!--Company Name-->
+						<div class="page-header">
+							<h1 id="sponsorName">Aston Computer Science Society (ACSS)</h1>
+						</div>
+							<!--Who are we?-->
+						<div class="caption">
+							<h3>Who are we?</h3>
+							<p id="sponsorDesc">Aston University's official society dedicated to everything Computer Science and Hackathon-related events. </p>
+							<h3>What can we offer?</h3>
+							<p id="sponsorOffer">For Aston Students, we are accepting new members via the SU.</p>
+							<h3>Where can you find us?</h3>
+							<p>You can email us at: <a id="sponsorEmail" href="mailto:enquires@astoncss.org">enquires@astoncss.org</a></p>
+							<p>You can visit out site at: <a id="sponsorSite" href="https://astoncss.org">hhttps://astoncss.org</a></p>
+						<!--Events-->
+							<!--Main TitleTitle-->
+						<div class="caption">
+							<div class="page-header">
+								<h2>Events in the hackathon</h2>
+							</div>
+							<!--Event Content (Workshops and Games included)-->
+							<!-- Requires additional Div Container?? -->
+							<div class="panel panel-default" id="sponsorEvents">
+								<div class="panel-heading">
+									<!-- Event Name -->
+									<h3 id="eventName">Node.js Workshop with Aaron</h3>
+								</div>
+								<div class="panel-body">
+									<p id="eventDescription">Learn and code along side with Aaron about node.js and all the fun about it. Also with subliminal information about Tae Kwon Do.</p>
+									<!-- Event Time -->
+									<h2>Time: <span id="eventTime">16:00</span></h2>
+									<br>
+									<!-- Event Location -->
+									<h2>Location: <span id="eventLocation">Workshop Room 1</span></h2>
+								</div>
+							</div>
+						</div>
+						<!--Challenge-->
+						<div class="caption">
+							<!--Title-->
+							<div class="page-header">
+								<h2>Challenges</h2>
+							</div>
+							<!--Content-->
+							<div class="panel panel-default">
+								<div class="panel-heading">
+									<h2 id="spnChalName">Goose Challenge</h2>
+								</div>
+								<div class="panel-body">
+									<p id="spnChalDesc">To join this challenge is to create the most interesting, and "creative" goose-related hacks, that represent Aston University's mascot: Gooses.</p>
+								</div>
+								<div class="panel-footer">
+									<h5><i id="spnChalPrz">Prize: Nerf Guns</i></h5>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--Footer-->
+		<div class="page-footer" id="foot">
+			<h3>Copyright</h3>
+			<p>This template is created & copyrighted by <a href="https://github.com/kkgm13">Kelvin M.</a> & <a href="https://github.com/Milton-R">Milton R.</a> for any hackathon event tracking usage.</p>
+			<p>This is an open sourced Hackathon tracker template.</p>
+			<!--W3C CSS Validator-->
+			<p>
+			    <a href="http://jigsaw.w3.org/css-validator/check/referer">
+			        <img style="border:0;width:88px;height:31px"
+			            src="http://jigsaw.w3.org/css-validator/images/vcss"
+			            alt="Valid CSS!" />
+			    </a>
+			</p>
+		</div>
+	</div>
+	<!--JQuery-->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+		<!--JavaScript-->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</body>
+</html>
