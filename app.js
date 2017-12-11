@@ -10,7 +10,7 @@ app.once('ready', () =>{
 	})
 
 	window.loadURL(url.format({
-		pathname: path.join(__dirname, 'hackaTrackWeb/index.html'),
+		pathname: path.join(__dirname, 'index.html'),
 		protocol: 'file',
 		slashes: true
 	}))
