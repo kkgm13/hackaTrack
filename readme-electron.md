@@ -5,7 +5,7 @@
 	'''
 	* Goes through and creates JSON package
 		* Edit the JSON Package to add, under the test
-			'''
+			''' 
 			"test": "...",
 			"start":"electron filename.js"
 			'''

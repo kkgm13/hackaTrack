@@ -2,8 +2,9 @@
 _Hackathon Event Tracker which monitors activites and events of a hackathon_
 
 _Created at [BullHacks](https://bullhacks.io)_
+[Visit this now](https://kkgm13.github.io/hackaTrack/)
 
-###### _Note: This is a template!_
+##### _Note: This is a template!_
 ## hackATrack Hackathon Utilization
 If a Hackathon would like to use this template, please:
 * Fork This
@@ -32,7 +33,6 @@ If a Hackathon would like to use this template, please:
 ### Future Updates:
 * Back-end Integration with EJS, React, PHP or SQL
 * <del>Standard templates for all general pages</del>
-* Integration to GitHub Pages for template visualization [Now Live](https://kkgm13.github.io/hackaTrack/)
 * Slack/Twitter API Integration
 
 # Created by:
