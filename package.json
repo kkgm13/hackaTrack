@@ -1,6 +1,6 @@
 {
   "name": "electronapp",
-  "version": "1.0.0",
+  "version": "1.7.11",
   "description": "Just a Test",
   "main": "app.js",
   "scripts": {
@@ -10,6 +10,6 @@
   "author": "Kelvin Minguell",
   "license": "ISC",
   "dependencies": {
-    "electron": "^1.7.9"
+    "electron": "^1.8.2"
   }
 }
