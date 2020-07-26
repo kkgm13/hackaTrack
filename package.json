@@ -1,6 +1,6 @@
 {
   "name": "electronapp",
-  "version": "7.*",
+  "version": "7.2.4",
   "description": "Just a Test",
   "main": "app.js",
   "scripts": {
